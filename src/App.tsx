@@ -69,6 +69,8 @@ const lifetimePlan = {
   highlights: ['Add Unlimited Accounts', 'Send Unlimited Messages', 'Create Unlimited campaigns', 'Priority support channel'],
 }
 
+const checkoutUrl = 'https://buy.stripe.com/3cI3cvd3BfwM3bwagMaVa00'
+
 const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a']
 
 const fadeStagger = {
@@ -347,7 +349,7 @@ const PricingCard = ({ plan, delay }: { plan: typeof lifetimePlan; delay: number
           </motion.li>
         ))}
       </ul>
-      <MagneticButton type="button" className="pricing-cta">
+      <MagneticButton type="button" className="pricing-cta" onClick={() => window.open(checkoutUrl, '_blank', 'noopener,noreferrer')}>
         Buy Now
       </MagneticButton>
     </motion.article>
@@ -403,7 +405,9 @@ const App = () => {
             </a>
           </div>
           <div className="nav-actions">
-            <MagneticButton type="button">Buy Now</MagneticButton>
+            <MagneticButton type="button" onClick={() => window.open(checkoutUrl, '_blank', 'noopener,noreferrer')}>
+              Buy Now
+            </MagneticButton>
           </div>
         </nav>
         <div className="hero-content">
@@ -412,7 +416,9 @@ const App = () => {
             <h1>Send Unlimited X DMs With This Extension</h1>
             <p>You install it once, it's yours for life — send Unlimited X DMs directly from your computer with full control, privacy, and no recurring payments.</p>
             <div className="hero-cta">
-              <MagneticButton type="button">Buy Now</MagneticButton>
+              <MagneticButton type="button" onClick={() => window.open(checkoutUrl, '_blank', 'noopener,noreferrer')}>
+                Buy Now
+              </MagneticButton>
             </div>
           </motion.div>
           <HeroMockup isLoaded={isLoaded} />
