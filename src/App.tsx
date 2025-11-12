@@ -1,6 +1,6 @@
 import type { MouseEvent as ReactMouseEvent, ReactNode } from 'react'
 import { useEffect, useRef, useState } from 'react'
-import { animate, motion, useInView, useMotionValue, useSpring } from 'framer-motion'
+import { motion, useMotionValue, useSpring } from 'framer-motion'
 import type { HTMLMotionProps, Variants } from 'framer-motion'
 import confetti from 'canvas-confetti'
 import clsx from 'clsx'
