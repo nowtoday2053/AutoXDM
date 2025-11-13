@@ -1297,8 +1297,8 @@ section {
   }
 
   .hero-copy {
-    text-align: center;
-    align-items: center;
+    text-align: left;
+    align-items: flex-start;
     justify-content: center;
     width: 100%;
     max-width: min(32rem, 100%);
@@ -1307,7 +1307,7 @@ section {
 
   .hero-copy h1 {
     width: 100%;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
   }
 
   .hero-copy p {
