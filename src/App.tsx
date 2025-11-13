@@ -468,6 +468,10 @@ const App = () => {
 
       <footer className="footer">
         <span>© {new Date().getFullYear()} AutoXDM. Built for modern outreach teams.</span>
+        <div className="footer-support">
+          Need help? DM us on <a href="https://t.me/Cylobuilds" target="_blank" rel="noopener noreferrer">Telegram @Cylobuilds</a> or{' '}
+          <a href="https://x.com/cylodev" target="_blank" rel="noopener noreferrer">X @cylodev</a> and we will get you sorted quickly.
+        </div>
         <div className="footer-links">
           <a href="#privacy">Privacy</a>
           <a href="#terms">Terms</a>
