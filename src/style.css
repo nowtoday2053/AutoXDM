@@ -1298,7 +1298,7 @@ section {
 
   .hero-copy {
     text-align: left;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     width: 100%;
     max-width: min(32rem, 100%);
@@ -1312,6 +1312,10 @@ section {
 
   .hero-copy p {
     max-width: min(34ch, 100%);
+  }
+
+  .hero-cta {
+    align-items: center;
   }
   .hero-cta .magnetic-button {
     width: 100%;
