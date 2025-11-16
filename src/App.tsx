@@ -399,10 +399,8 @@ const App = () => {
           </div>
           <div className="nav-links">
             <a href="#features">Features</a>
+            <a href="#reviews">Reviews</a>
             <a href="#pricing">Pricing</a>
-            <a href="https://t.me/Cylobuilds" target="_blank" rel="noopener noreferrer">
-              Contact
-            </a>
           </div>
           <div className="nav-actions">
             <MagneticButton type="button" onClick={() => window.open(checkoutUrl, '_blank', 'noopener,noreferrer')}>
@@ -442,7 +440,7 @@ const App = () => {
           </div>
         </section>
 
-        <section className="social-proof" aria-labelledby="social-proof">
+        <section className="social-proof" id="reviews" aria-labelledby="social-proof">
           <SectionHeader
             eyebrow="Loved by Operators"
             title="What Our Customers Say"
@@ -469,11 +467,10 @@ const App = () => {
       <footer className="footer">
         <span>© {new Date().getFullYear()} AutoXDM. Built for modern outreach teams.</span>
         <div className="footer-support">
-          Need help? DM us on <a href="https://t.me/Cylobuilds" target="_blank" rel="noopener noreferrer">Telegram @Cylobuilds</a> or{' '}
-          <a href="https://x.com/cylodev" target="_blank" rel="noopener noreferrer">X @cylodev</a> and we will get you sorted quickly.
+          Need help? Email us at <a href="mailto:support@autoxdm.com">support@autoxdm.com</a> and we will get you sorted quickly.
         </div>
         <div className="footer-links">
-          <a href="#privacy">Privacy</a>
+          <a href="/privacy.html">Privacy</a>
           <a href="#terms">Terms</a>
           <a href="#security">Security</a>
         </div>
