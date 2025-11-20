@@ -467,7 +467,7 @@ const App = () => {
       <footer className="footer">
         <span>© {new Date().getFullYear()} AutoXDM. Built for modern outreach teams.</span>
         <div className="footer-support">
-          Need help? Email us at <a href="mailto:support@autoxdm.com">support@autoxdm.com</a> and we will get you sorted quickly.
+          Need Help? Email us at <a href="mailto:support@autoxdm.com">support@autoxdm.com</a>
         </div>
         <div className="footer-links">
           <a href="/privacy.html">Privacy</a>
