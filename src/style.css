@@ -71,7 +71,7 @@ section {
 
 .hero {
   position: relative;
-  padding: 4.5rem min(8vw, 6rem) 6rem;
+  padding: 1.5rem min(8vw, 6rem) 5rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -98,7 +98,7 @@ section {
   gap: 1.5rem;
   padding: 0.75rem 1.5rem;
   border-radius: 999px;
-  margin: 0 auto 4rem;
+  margin: 0 auto 1.5rem;
   max-width: 1080px;
   backdrop-filter: blur(18px);
   background: rgba(255, 255, 255, 0.85);
@@ -276,10 +276,19 @@ section {
 
 .hero-copy h1 {
   font-family: 'Clash Display', 'Inter', sans-serif;
-  font-size: clamp(2.4rem, 3vw + 1.8rem, 4rem);
-  line-height: 1.05;
+  font-size: clamp(2.2rem, 3vw + 1.6rem, 3.6rem);
+  line-height: 1.08;
   margin: 0;
   color: #0f172a;
+}
+
+.hero-title__primary,
+.hero-title__secondary {
+  display: block;
+}
+
+.hero-title__primary {
+  white-space: nowrap;
 }
 
 .hero-copy p {

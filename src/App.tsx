@@ -65,7 +65,7 @@ const testimonials = [
 const lifetimePlan = {
   name: 'Lifetime Access',
   description: 'One Time Payment',
-  price: 100,
+  price: 97,
   highlights: ['Add Unlimited Accounts', 'Send Unlimited Messages', 'Create Unlimited campaigns', 'Priority support channel'],
 }
 
@@ -411,7 +411,10 @@ const App = () => {
         <div className="hero-content">
           <motion.div className="hero-copy" initial={{ opacity: 0, y: 32 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}>
             <span className="hero-eyebrow">Chrome Extension • X Automation</span>
-            <h1>Send Unlimited X DMs With This Extension</h1>
+            <h1>
+              <span className="hero-title__primary">Reach $10k/Month</span>
+              <span className="hero-title__secondary">Using This DM Tool</span>
+            </h1>
             <p>You install it once, it's yours for life — send Unlimited X DMs directly from your computer with full control, privacy, and no recurring payments.</p>
             <div className="hero-cta">
               <MagneticButton type="button" onClick={() => window.open(checkoutUrl, '_blank', 'noopener,noreferrer')}>
