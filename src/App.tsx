@@ -65,11 +65,11 @@ const testimonials = [
 const lifetimePlan = {
   name: 'Lifetime Access',
   description: 'One Time Payment',
-  price: 97,
+  price: 250,
   highlights: ['Add Unlimited Accounts', 'Send Unlimited Messages', 'Create Unlimited campaigns', 'Priority support channel'],
 }
 
-const checkoutUrl = 'https://buy.stripe.com/3cI3cvd3BfwM3bwagMaVa00'
+const checkoutUrl = 'https://buy.stripe.com/14A4gz9Rpbgw6nIbkQaVa01'
 
 const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a']
 
@@ -401,6 +401,7 @@ const App = () => {
             <a href="#features">Features</a>
             <a href="#reviews">Reviews</a>
             <a href="#pricing">Pricing</a>
+            <a href="/affiliate.html">Affiliates</a>
           </div>
           <div className="nav-actions">
             <MagneticButton type="button" onClick={() => window.open(checkoutUrl, '_blank', 'noopener,noreferrer')}>
@@ -410,12 +411,15 @@ const App = () => {
         </nav>
         <div className="hero-content">
           <motion.div className="hero-copy" initial={{ opacity: 0, y: 32 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}>
-            <span className="hero-eyebrow">Chrome Extension • X Automation</span>
             <h1>
-              <span className="hero-title__primary">Reach $10k/Month</span>
-              <span className="hero-title__secondary">Using This DM Tool</span>
+              <span className="hero-title__primary">Automate X Outreach.</span>
+              <span className="hero-title__secondary">Make More Money.</span>
             </h1>
-            <p>You install it once, it's yours for life — send Unlimited X DMs directly from your computer with full control, privacy, and no recurring payments.</p>
+            <p>
+              Turn X conversations into <strong>paying clients.</strong>
+              <br />
+              Automatically find the right people, send personalized DMs at scale, and make <strong>money&nbsp;24/7.</strong>
+            </p>
             <div className="hero-cta">
               <MagneticButton type="button" onClick={() => window.open(checkoutUrl, '_blank', 'noopener,noreferrer')}>
                 Buy Now
@@ -428,7 +432,7 @@ const App = () => {
 
       <main>
         <section className="features" id="features">
-          <SectionHeader eyebrow="Why AutoXDM" title="Everything you need to run premium outreach" description="Automate with empathy, personalize at scale, and understand how every campaign converts in real time." />
+          <SectionHeader eyebrow="Why AutoXDM" title="Everything you need to run premium outreach" description="Target. Personalize. Convert. All in one place." />
           <div className="features-grid">
             {features.map((feature, index) => (
               <motion.article key={feature.id} className="feature-card" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-20% 0px' }} transition={{ delay: index * 0.2, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}>
@@ -476,6 +480,7 @@ const App = () => {
           <a href="/privacy.html">Privacy</a>
           <a href="#terms">Terms</a>
           <a href="#security">Security</a>
+          <a href="/affiliate.html">Affiliates</a>
         </div>
       </footer>
     </div>
